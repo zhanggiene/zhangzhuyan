@@ -1,0 +1,71 @@
+.image{
+
+  display: block;
+  height: 0;
+  width: 250px;
+  padding-top: 70%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 70%;
+    border-radius: 50%; /*don't forget prefixes*/
+    background-color: black;
+    background-position: center center;
+    border-color: rgb(146, 86, 64);
+    background-image: url("../img/profilePic.jpg");
+    border: 5px solid rgb(15, 44, 53);
+    /* as mentioned by Vad: */
+    background-size: cover;
+
+  min-width: 0;
+  opacity: 1;
+  }
+
+  .main {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .left-half {
+    flex: 1;
+    padding: 1rem;
+    align-items: center;
+  }
+  .moving_text{
+    padding-top: 15%;
+    padding-left: 10%;
+  }
+
+  .description_text{
+    padding-left: 10%;
+    color: rgb(253, 253, 253);
+  }
+
+  .socialIcons{
+    padding-left: 10%;
+    display: flex;
+justify-content: center;
+
+  }
+  
+  .right-half {
+    flex: 1;
+    padding: 1rem;
+  }
+
+
+  .icon{
+
+    margin: 20px;
+  }
+  
+.resumeButton{
+  padding-left: 42%;
+}
+
+.uniText{
+  text-align: center;
+
+}
+

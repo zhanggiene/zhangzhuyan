@@ -1,0 +1,95 @@
+
+h2:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: #037FFF;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+    padding-bottom: 2rem;
+    margin: 5%;
+}
+
+.item-container{
+    overflow: hidden;
+}
+
+.item-con{
+    width: 100%;
+    padding: 1.2rem 1.2rem;
+    background-color: #19202E;
+    cursor: pointer;
+    
+}
+
+.item-container > img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+
+.item-con:hover::before,.item-con:hover::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,#e6fb04,#ff00ff,#ff0099,#6e0dd0);
+    background-size: 400%;
+    width: calc(100%+5px);
+    height: cal(100%+5px);
+    z-index:-1;
+    animation :animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0 ;
+
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+    
+}
+
+.item-con:hover::after{
+
+    filter: blur(40px)
+}
+
+
+
+
+.buttons{
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.btn{
+    padding: .5rem 2rem;
+    background-color: #0C3564;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+}
+
+.btn:not(:last-child){
+    margin-right: 1rem;
+}
+
+.btn:hover{
+    background-color: #037FFf;
+    cursor: pointer;
+}

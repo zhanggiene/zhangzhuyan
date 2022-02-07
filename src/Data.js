@@ -15,5 +15,12 @@ export default [
         title: 'How to use Search Engine Optimisation',
         categories: ['Tips'],
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
-    }
+    },
+    {
+        id:3,
+        image: chineseChess,
+        title: 'How to use Search Engineation',
+        categories: ['Tips','Testing'],
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+    },
 ];

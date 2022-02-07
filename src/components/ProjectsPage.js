@@ -2,7 +2,8 @@ import { useState } from 'react';
 import items from '../Data';
 import Menu from './Menu';
 import Button from './Button';
-
+import React  from "react";
+import './ProjectsPage.css';
 
 
 var R=items.reduce((x,y) => x.concat(y.categories) , []);
@@ -28,13 +29,6 @@ function App() {
 
   return (
     <div className="App">
-       
-       <div className="title">
-         <h1>
-           Portfolio 
-           <span> Filter</span>
-         </h1>
-       </div>
 
 
       <Button button={buttons} filter={filter} />
