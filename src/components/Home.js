@@ -104,9 +104,19 @@ className='resumeButton'>
 
   class="image"></motion.div>
 
-  <div className='uniText'><h1> Nanyang Technology University </h1>
+  <motion.div 
+  
+  initial={{opacity:0}}
+  animate={{opacity:1}}
+  transition={{
+    duration:1 ,delay:1
+    }}
+  
+  
+  
+  className='uniText'><h1> Nanyang Technology University </h1>
   <h1>        2019-2023</h1>
-  </div>
+  </motion.div>
   </div>
 
 

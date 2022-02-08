@@ -1,11 +1,10 @@
 import React  from "react";
 import {Tabs,Tab,AppBar} from "@material-ui/core";
-import {BrowserRouter,Route,Switch,Link} from "react-router-dom";
+import {BrowserRouter,Route,Switch,Link,Redirect} from "react-router-dom";
 import Home from './components/Home';
 import ProjectsPage from './components/ProjectsPage'
 
 import './App.css'
-import SocialMedia from "./components/SocialMedia";
 
 
 // action creater
@@ -15,7 +14,7 @@ import SocialMedia from "./components/SocialMedia";
 
 
 export default function App() {
-    const routes =["/home","/projects","/contact"];
+    const routes =["/home","/projects"];
   return (
     <div className="App">
 
@@ -38,29 +37,27 @@ export default function App() {
 
 <Tab
                   value={routes[0]}
-                  label="overview"
+                  label="home"
                   component={Link}
                   to={routes[0]}
                 />
                 <Tab
                   value={routes[1]}
-                  label="correlation"
+                  label="Projects"
                   component={Link}
                   to={routes[1]}
                 />
 
-<Tab
-                  value={routes[2]}
-                  label="return_distribution"
-                  component={Link}
-                  to={routes[2]}
-                />
+
                 </Tabs>
             </AppBar>
           )}
         />
 
 <Switch>
+<Route exact path="/">
+    <Redirect to="/home" />
+</Route>
           <Route path="/home" component={Home} />
           <Route path="/projects" component={ProjectsPage} />
         </Switch>
